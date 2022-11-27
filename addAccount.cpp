@@ -28,7 +28,6 @@ void Administrator::addAccount(){
 			fileName = STUDENT_FILE;
 			cout << "请输入学号：" << endl;
 			id=getSelect();//输入学号或者职工号
-			id = abs(id);//防止有负数
 			errorTip = "学号重复，请重新输入";
 			
 			break;
@@ -36,7 +35,6 @@ void Administrator::addAccount(){
 			fileName = TEACHER_FILE;
 			cout << "请输入职工编号：" << endl;
 			id=getSelect();//输入学号或者职工号
-			id = abs(id);
 			errorTip = "职工号重复，请重新输入";
 			
 			break;
