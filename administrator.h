@@ -33,6 +33,9 @@ public:
 	//初始化容器
 	void initVector();
 
+	//初始化机房
+	void initCom();
+
 	//检测重复 参数(传入id，传入类型） 返回值：（true 代表有重复，false代表没有重复）
 	bool checkRepeat(int id, int type);
 	bool checkRepeat(string name, int type);//重载，用于检测Admin

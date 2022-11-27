@@ -74,25 +74,7 @@ void Administrator::initVector() {
 	ifs.close();//管理员初始化结束
 
 	//机房信息初始化
-	ifs.open(COMPUTER_FILE, ios::in);
-	if (!ifs.is_open()) {
-		cout << "机房文件不存在" << endl;
-		ifs.close();
-		ofs.open(COMPUTER_FILE, ios::out | ios::trunc);//新建
-		ofs.close();
-		return;
-	}
-	ComputerRoom cr; 
-	while(ifs>>fData){
-		v_data = loadData(fData);
-		cr.m_comId = stringToInt(v_data[0]);//录入机房编号
-		cr.m_maxNum = stringToInt(v_data[1]);//机房最大人数
-		cr.m_orderNum = stringToInt(v_data[2]);//机房预约数量
-		vCom.push_back(cr);
-	}
-	v_data.clear();
-
-	ifs.close();//机房信息初始化结束
+	this->initCom();
 
 
 
@@ -101,36 +83,6 @@ void Administrator::initVector() {
 
 }
 
-void Student::initVector() {
-	//获取机房信息
-	ifstream ifs(COMPUTER_FILE,ios::in);
-	string fData;
-	ComputerRoom cr;
-	while(ifs>>fData){
-		vector<string> v_data = loadData(fData);
-		cr.m_comId = stringToInt(v_data[0]);//录入机房编号
-		cr.m_maxNum = stringToInt(v_data[1]);//机房最大人数
-		cr.m_orderNum = stringToInt(v_data[2]);//机房预约数量
-		vCom.push_back(cr);
-	}
-	ifs.close();
-}
-
-
-void Teacher::initVector() {
-	//获取机房信息
-	ifstream ifs(COMPUTER_FILE, ios::in);
-	string fData;
-	ComputerRoom cr;
-	while (ifs >> fData) {
-		vector<string> v_data = loadData(fData);
-		cr.m_comId = stringToInt(v_data[0]);//录入机房编号
-		cr.m_maxNum = stringToInt(v_data[1]);//机房最大人数
-		cr.m_orderNum = stringToInt(v_data[2]);//机房预约数量
-		this->vCom.push_back(cr);
-	}
-	ifs.close();
-}
 
 
 void OrderFile::initVector() {

@@ -139,6 +139,7 @@
     <ClCompile Include="exitSystem.cpp" />
     <ClCompile Include="getSelect.cpp" />
     <ClCompile Include="Identity.cpp" />
+    <ClCompile Include="initCom.cpp" />
     <ClCompile Include="loadOrder.cpp" />
     <ClCompile Include="initVector.cpp" />
     <ClCompile Include="loadData.cpp" />

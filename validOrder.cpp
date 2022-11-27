@@ -61,21 +61,32 @@ void Teacher::validOrder(){
 			int choice=-1;
 			while (true) {
 				choice = getSelect();
-				//取出map容器
+				//取出map容器 注意只有比较的时候可以用m_data，如果要更改，就要写 orderFile.m_orderData[v[select - 1]]
 				map<string, string> m_data = orderFile.m_orderData[v[select - 1]];
 				
+				//预约的机房 注意只有比较的时候可以用cr，如果要更改，就要写 vCom[stringToInt(m_data["roomId"]) - 1]
+				ComputerRoom cr = vCom[stringToInt(m_data["roomId"]) - 1];
 
 				if (choice == 0) {
 					cout << "退出成功" << endl;
 					break;
 				}
 				else if (choice == 1) {
+					this->initCom();
+					//判断预约数量是不是在最大人数里
+					if (cr.m_orderNum >= cr.m_maxNum) {
+						cout << "目前预约人数已满！无法通过" << endl;
+						break;
+					}
+
+
 					//更新预约信息
 					orderFile.m_orderData[v[select - 1]]["status"] = "2";
 					orderFile.updateOrder();
 					
-					//更新机房信息
-					vCom[stringToInt(m_data["roomId"])].m_orderNum++;
+					//更新机房信息 注意这里要-1
+					
+					vCom[stringToInt(m_data["roomId"])-1].m_orderNum++;
 					this->updateComRoom();
 
 					cout << "审核已通过" << endl;

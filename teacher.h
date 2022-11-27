@@ -18,7 +18,7 @@ public:
 	void validOrder();
 
 	//初始化机房
-	void initVector();
+	void initCom();
 
 	//更新机房信息
 	void updateComRoom();

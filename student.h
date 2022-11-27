@@ -30,7 +30,7 @@ public:
 	void cancelOrder();
 
 	//初始化容器
-	void initVector();
+	void initCom();
 
 	//更新机房信息 主要是更新预约
 	void updateComRoom();
