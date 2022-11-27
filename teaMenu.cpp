@@ -23,6 +23,10 @@ void ComputerManager::teaMenu(Identity*& teacher) {
 			cout << "审核预约" << endl;
 			tea->validOrder();
 			break;
+		case 3:
+			cout << "查看机房" << endl;
+			tea->showComputerRoom();
+			break;
 		case 0:
 			delete teacher;//因为是new出来的
 			cout << "注销成功" << endl;

@@ -24,8 +24,6 @@ public:
 	//查看管理员账号
 	void showAdminAccount();
 
-	//查看机房
-	void showComputerRoom();
 
 	//清空预约
 	void clearOrder();
@@ -33,8 +31,7 @@ public:
 	//初始化容器
 	void initVector();
 
-	//初始化机房
-	//void initCom();
+	
 
 	//检测重复 参数(传入id，传入类型） 返回值：（true 代表有重复，false代表没有重复）
 	bool checkRepeat(int id, int type);

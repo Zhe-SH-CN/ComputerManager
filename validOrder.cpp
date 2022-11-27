@@ -72,7 +72,7 @@ void Teacher::validOrder(){
 					break;
 				}
 				else if (choice == 1) {
-					this->initCom();
+					//this->initCom();//不用再更新判断
 					//判断预约数量是不是在最大人数里
 					if (cr.m_orderNum >= cr.m_maxNum) {
 						cout << "目前预约人数已满！无法通过" << endl;

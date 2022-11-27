@@ -14,6 +14,8 @@ void Student::openMenu() {
 		<< "\t\t\t|                                   |" << endl
 		<< "\t\t\t|          4.取消预约               |" << endl
 		<< "\t\t\t|                                   |" << endl
+		<< "\t\t\t|          5.查看机房               |" << endl
+		<< "\t\t\t|                                   |" << endl
 		<< "\t\t\t|          0.注销登录               |" << endl
 		<< "\t\t\t|                                   |" << endl
 		<< "\t\t\t -----------------------------------" << endl;
@@ -28,6 +30,8 @@ void Teacher::openMenu(){
 		<< "\t\t\t|          1.查看所有预约       |" << endl
 		<< "\t\t\t|                               |" << endl
 		<< "\t\t\t|          2.审核预约           |" << endl
+		<< "\t\t\t|                               |" << endl
+		<< "\t\t\t|          3.查看机房           |" << endl
 		<< "\t\t\t|                               |" << endl
 		<< "\t\t\t|          0.注销登录           |" << endl
 		<< "\t\t\t|                               |" << endl

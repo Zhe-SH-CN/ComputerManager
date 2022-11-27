@@ -18,6 +18,9 @@ public:
 	//初始化机房
 	void initCom();
 
+	//显示机房信息
+	void showComputerRoom();
+
 	//存储机房信息
 	vector<ComputerRoom> vCom;
 

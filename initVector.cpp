@@ -74,13 +74,7 @@ void Administrator::initVector() {
 	ifs.close();//管理员初始化结束
 
 	//机房信息初始化
-	this->initCom();
-
-
-
-
-
-
+	//this->initCom();
 }
 
 

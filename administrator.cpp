@@ -9,4 +9,6 @@ Administrator::Administrator(string name, string pwd) {
 
 	//初始化容器
 	this->initVector();
+	//初始化机房
+	this->initCom();
 }

@@ -57,7 +57,7 @@ void Student::cancelOrder(){
 
 				//如果是预约成功的取消了，就要把机房里的预约数量-1
 				if (m_data["status"] == "2") {
-					this->initCom();
+					//this->initCom();//不用再更新了
 					vCom[stringToInt(m_data["roomId"])-1].m_orderNum --;
 					this->updateComRoom();
 				}

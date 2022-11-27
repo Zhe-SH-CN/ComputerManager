@@ -24,6 +24,10 @@ void ComputerManager::stuMenu(Identity*& student) {
 			cout << "取消预约" << endl;
 			stu->cancelOrder();
 			break;
+		case 5:
+			cout << "查看机房" << endl;
+			stu->showComputerRoom();
+			break;
 		case 0:
 			delete student;
 			cout << "注销成功" << endl;

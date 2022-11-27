@@ -1,7 +1,9 @@
 #include"administrator.h"
+#include"student.h"
+#include"teacher.h"
 //管理员 查看机房
-void Administrator::showComputerRoom() {
-	this->initCom();//重新获取机房信息
+void Identity::showComputerRoom() {
+	//this->initCom();//重新获取机房信息
 	cout << "机房信息如下" << endl<<endl
 		<< "机房编号\t最大容量\t预约人数" << endl
 		<<"-------------------------------------------"<<endl;
