@@ -34,11 +34,11 @@ void ComputerManager::Login(string fileName,int type) {
 	{
 	case 1:
 		cout << "请输入你的学号：" << endl;
-		cin >> id;
+		id=getSelect();
 		break;
 	case 2:
 		cout << "请输入你的教职工号：" << endl;
-		cin >> id;
+		id=getSelect();
 		break;
 	default:
 		break;
