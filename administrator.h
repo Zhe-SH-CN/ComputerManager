@@ -34,7 +34,7 @@ public:
 	void initVector();
 
 	//初始化机房
-	void initCom();
+	//void initCom();
 
 	//检测重复 参数(传入id，传入类型） 返回值：（true 代表有重复，false代表没有重复）
 	bool checkRepeat(int id, int type);
@@ -48,8 +48,6 @@ public:
 	//存放管理员信息
 	vector<Administrator> vAdm;
 
-	//存放机房信息
-	vector<ComputerRoom> vCom;
 	
 
 };

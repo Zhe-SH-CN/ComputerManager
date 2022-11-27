@@ -13,10 +13,10 @@ public:
 	virtual void openMenu() = 0;
 
 	//更新机房信息
-	//void updateComRoom();
+	void updateComRoom();
 
 	//初始化机房
-	//void initVector();
+	void initCom();
 
 	//存储机房信息
 	vector<ComputerRoom> vCom;

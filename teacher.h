@@ -17,14 +17,7 @@ public:
 	//审核预约
 	void validOrder();
 
-	//初始化机房
-	void initCom();
 
-	//更新机房信息
-	void updateComRoom();
-
-	//机房信息
-	vector<ComputerRoom> vCom;
 	int m_empId;//教职工号
 };
 

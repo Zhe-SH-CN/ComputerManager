@@ -29,16 +29,6 @@ public:
 	//取消预约
 	void cancelOrder();
 
-	//初始化容器
-	void initCom();
-
-	//更新机房信息 主要是更新预约
-	void updateComRoom();
-
-
-	
-	//机房信息
-	vector<ComputerRoom> vCom;
 
 	int m_id;//学号
 
